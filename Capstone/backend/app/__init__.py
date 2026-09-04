@@ -1,0 +1,1 @@
+"""GreenPharm FastAPI backend package."""

@@ -1,0 +1,1 @@
+"""Business logic layer. Routers stay thin; domain rules live here."""

@@ -1,0 +1,997 @@
+{
+  "categories": [
+    "Analgesic",
+    "Antibiotic",
+    "Antidiabetic",
+    "Cardiovascular",
+    "Respiratory",
+    "Gastrointestinal",
+    "Vitamin & Supplement",
+    "Dermatological"
+  ],
+  "users": [
+    {
+      "id": "USR-101",
+      "name": "Priya Nair",
+      "email": "priya.nair@greenpharm.example",
+      "role": "pharmacist",
+      "initials": "PN"
+    },
+    {
+      "id": "USR-102",
+      "name": "Jordan Mensah",
+      "email": "jordan.mensah@greenpharm.example",
+      "role": "inventory_manager",
+      "initials": "JM"
+    },
+    {
+      "id": "USR-103",
+      "name": "Alina Frost",
+      "email": "alina.frost@greenpharm.example",
+      "role": "administrator",
+      "initials": "AF"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "SUP-001",
+      "name": "MediSource Distributors",
+      "contactPerson": "Anita Raymond",
+      "phone": "+1 415 555 0148",
+      "email": "orders@medisource.example",
+      "address": "182 Harbor Way, Portland, OR 97209",
+      "medicinesSupplied": [
+        "Paracetamol 500mg",
+        "Ibuprofen 400mg",
+        "Amoxicillin 500mg"
+      ],
+      "orderCount": 42,
+      "lastOrderDate": "2026-08-05"
+    },
+    {
+      "id": "SUP-002",
+      "name": "GreenLeaf Pharma Supply",
+      "contactPerson": "Daniel Okafor",
+      "phone": "+1 312 555 0182",
+      "email": "sales@greenleafpharma.example",
+      "address": "9 Willow Park, Chicago, IL 60614",
+      "medicinesSupplied": [
+        "Metformin 850mg",
+        "Atorvastatin 20mg",
+        "Vitamin D3 1000IU"
+      ],
+      "orderCount": 31,
+      "lastOrderDate": "2026-08-10"
+    },
+    {
+      "id": "SUP-003",
+      "name": "Nordic Health Logistics",
+      "contactPerson": "Sara Lindqvist",
+      "phone": "+1 206 555 0110",
+      "email": "support@nordichealth.example",
+      "address": "44 Cedar Street, Seattle, WA 98101",
+      "medicinesSupplied": [
+        "Salbutamol Inhaler",
+        "Cetirizine 10mg",
+        "Omeprazole 20mg"
+      ],
+      "orderCount": 27,
+      "lastOrderDate": "2026-07-29"
+    },
+    {
+      "id": "SUP-004",
+      "name": "Apex Medical Trading",
+      "contactPerson": "Marcus Lee",
+      "phone": "+1 617 555 0173",
+      "email": "procurement@apexmedical.example",
+      "address": "77 Beacon Row, Boston, MA 02108",
+      "medicinesSupplied": [
+        "Azithromycin 250mg",
+        "Losartan 50mg",
+        "Hydrocortisone Cream"
+      ],
+      "orderCount": 19,
+      "lastOrderDate": "2026-07-23"
+    },
+    {
+      "id": "SUP-005",
+      "name": "Vitalis Wholesale",
+      "contactPerson": "Priya Nair",
+      "phone": "+1 512 555 0139",
+      "email": "hello@vitaliswholesale.example",
+      "address": "301 Lakeview Blvd, Austin, TX 78701",
+      "medicinesSupplied": [
+        "Insulin Glargine",
+        "Aspirin 75mg",
+        "Multivitamin Complex"
+      ],
+      "orderCount": 24,
+      "lastOrderDate": "2026-08-12"
+    },
+    {
+      "id": "SUP-006",
+      "name": "Continental BioCare",
+      "contactPerson": "Tomas Ferreira",
+      "phone": "+1 305 555 0124",
+      "email": "orders@continentalbio.example",
+      "address": "58 Palm Court, Miami, FL 33131",
+      "medicinesSupplied": [
+        "Ceftriaxone 1g",
+        "Pantoprazole 40mg",
+        "Zinc Syrup"
+      ],
+      "orderCount": 12,
+      "lastOrderDate": "2026-07-07"
+    }
+  ],
+  "medicines": [
+    {
+      "id": "MED-001",
+      "name": "Paracetamol 500mg",
+      "category": "Analgesic",
+      "manufacturer": "Corvex Labs",
+      "batchNumber": "BN-2400",
+      "quantity": 1240,
+      "reorderLevel": 300,
+      "purchasePrice": 0.06,
+      "sellingPrice": 0.14,
+      "manufacturingDate": "2025-10-18",
+      "expiryDate": "2027-10-08",
+      "supplierId": "SUP-001",
+      "supplierName": "MediSource Distributors",
+      "storageLocation": "A1-S2"
+    },
+    {
+      "id": "MED-002",
+      "name": "Ibuprofen 400mg",
+      "category": "Analgesic",
+      "manufacturer": "Corvex Labs",
+      "batchNumber": "BN-2407",
+      "quantity": 180,
+      "reorderLevel": 250,
+      "purchasePrice": 0.09,
+      "sellingPrice": 0.2,
+      "manufacturingDate": "2025-11-27",
+      "expiryDate": "2027-06-10",
+      "supplierId": "SUP-001",
+      "supplierName": "MediSource Distributors",
+      "storageLocation": "A1-S3"
+    },
+    {
+      "id": "MED-003",
+      "name": "Amoxicillin 500mg",
+      "category": "Antibiotic",
+      "manufacturer": "Belmar Pharma",
+      "batchNumber": "BN-2414",
+      "quantity": 640,
+      "reorderLevel": 200,
+      "purchasePrice": 0.22,
+      "sellingPrice": 0.48,
+      "manufacturingDate": "2026-02-15",
+      "expiryDate": "2027-03-12",
+      "supplierId": "SUP-001",
+      "supplierName": "MediSource Distributors",
+      "storageLocation": "B2-S1"
+    },
+    {
+      "id": "MED-004",
+      "name": "Azithromycin 250mg",
+      "category": "Antibiotic",
+      "manufacturer": "Belmar Pharma",
+      "batchNumber": "BN-2421",
+      "quantity": 95,
+      "reorderLevel": 120,
+      "purchasePrice": 0.55,
+      "sellingPrice": 1.1,
+      "manufacturingDate": "2026-03-17",
+      "expiryDate": "2026-09-07",
+      "supplierId": "SUP-004",
+      "supplierName": "Apex Medical Trading",
+      "storageLocation": "B2-S2"
+    },
+    {
+      "id": "MED-005",
+      "name": "Ceftriaxone 1g Injection",
+      "category": "Antibiotic",
+      "manufacturer": "Nuvia Biotech",
+      "batchNumber": "BN-2428",
+      "quantity": 0,
+      "reorderLevel": 60,
+      "purchasePrice": 2.4,
+      "sellingPrice": 4.75,
+      "manufacturingDate": "2026-04-16",
+      "expiryDate": "2027-04-11",
+      "supplierId": "SUP-006",
+      "supplierName": "Continental BioCare",
+      "storageLocation": "C1-COLD"
+    },
+    {
+      "id": "MED-006",
+      "name": "Metformin 850mg",
+      "category": "Antidiabetic",
+      "manufacturer": "Halden Health",
+      "batchNumber": "BN-2435",
+      "quantity": 860,
+      "reorderLevel": 250,
+      "purchasePrice": 0.12,
+      "sellingPrice": 0.26,
+      "manufacturingDate": "2026-01-06",
+      "expiryDate": "2027-08-09",
+      "supplierId": "SUP-002",
+      "supplierName": "GreenLeaf Pharma Supply",
+      "storageLocation": "A2-S1"
+    },
+    {
+      "id": "MED-007",
+      "name": "Insulin Glargine 100IU",
+      "category": "Antidiabetic",
+      "manufacturer": "Nuvia Biotech",
+      "batchNumber": "BN-2442",
+      "quantity": 74,
+      "reorderLevel": 40,
+      "purchasePrice": 12.5,
+      "sellingPrice": 22,
+      "manufacturingDate": "2026-05-16",
+      "expiryDate": "2026-10-08",
+      "supplierId": "SUP-005",
+      "supplierName": "Vitalis Wholesale",
+      "storageLocation": "C1-COLD"
+    },
+    {
+      "id": "MED-008",
+      "name": "Atorvastatin 20mg",
+      "category": "Cardiovascular",
+      "manufacturer": "Halden Health",
+      "batchNumber": "BN-2449",
+      "quantity": 510,
+      "reorderLevel": 180,
+      "purchasePrice": 0.18,
+      "sellingPrice": 0.4,
+      "manufacturingDate": "2026-01-26",
+      "expiryDate": "2027-07-10",
+      "supplierId": "SUP-002",
+      "supplierName": "GreenLeaf Pharma Supply",
+      "storageLocation": "A3-S2"
+    },
+    {
+      "id": "MED-009",
+      "name": "Losartan 50mg",
+      "category": "Cardiovascular",
+      "manufacturer": "Corvex Labs",
+      "batchNumber": "BN-2456",
+      "quantity": 140,
+      "reorderLevel": 150,
+      "purchasePrice": 0.15,
+      "sellingPrice": 0.34,
+      "manufacturingDate": "2025-12-17",
+      "expiryDate": "2026-11-07",
+      "supplierId": "SUP-004",
+      "supplierName": "Apex Medical Trading",
+      "storageLocation": "A3-S3"
+    },
+    {
+      "id": "MED-010",
+      "name": "Aspirin 75mg",
+      "category": "Cardiovascular",
+      "manufacturer": "Belmar Pharma",
+      "batchNumber": "BN-2463",
+      "quantity": 1520,
+      "reorderLevel": 400,
+      "purchasePrice": 0.04,
+      "sellingPrice": 0.11,
+      "manufacturingDate": "2026-02-05",
+      "expiryDate": "2027-11-27",
+      "supplierId": "SUP-005",
+      "supplierName": "Vitalis Wholesale",
+      "storageLocation": "A3-S1"
+    },
+    {
+      "id": "MED-011",
+      "name": "Salbutamol Inhaler 100mcg",
+      "category": "Respiratory",
+      "manufacturer": "Aeris Medical",
+      "batchNumber": "BN-2470",
+      "quantity": 210,
+      "reorderLevel": 60,
+      "purchasePrice": 3.1,
+      "sellingPrice": 6.2,
+      "manufacturingDate": "2026-03-27",
+      "expiryDate": "2027-05-01",
+      "supplierId": "SUP-003",
+      "supplierName": "Nordic Health Logistics",
+      "storageLocation": "D1-S1"
+    },
+    {
+      "id": "MED-012",
+      "name": "Cetirizine 10mg",
+      "category": "Respiratory",
+      "manufacturer": "Aeris Medical",
+      "batchNumber": "BN-2477",
+      "quantity": 430,
+      "reorderLevel": 150,
+      "purchasePrice": 0.07,
+      "sellingPrice": 0.18,
+      "manufacturingDate": "2026-02-25",
+      "expiryDate": "2026-09-11",
+      "supplierId": "SUP-003",
+      "supplierName": "Nordic Health Logistics",
+      "storageLocation": "D1-S2"
+    },
+    {
+      "id": "MED-013",
+      "name": "Montelukast 10mg",
+      "category": "Respiratory",
+      "manufacturer": "Aeris Medical",
+      "batchNumber": "BN-2484",
+      "quantity": 88,
+      "reorderLevel": 100,
+      "purchasePrice": 0.31,
+      "sellingPrice": 0.68,
+      "manufacturingDate": "2026-03-07",
+      "expiryDate": "2027-01-06",
+      "supplierId": "SUP-003",
+      "supplierName": "Nordic Health Logistics",
+      "storageLocation": "D1-S3"
+    },
+    {
+      "id": "MED-014",
+      "name": "Omeprazole 20mg",
+      "category": "Gastrointestinal",
+      "manufacturer": "Halden Health",
+      "batchNumber": "BN-2491",
+      "quantity": 690,
+      "reorderLevel": 200,
+      "purchasePrice": 0.11,
+      "sellingPrice": 0.25,
+      "manufacturingDate": "2026-01-16",
+      "expiryDate": "2027-09-08",
+      "supplierId": "SUP-003",
+      "supplierName": "Nordic Health Logistics",
+      "storageLocation": "B1-S1"
+    },
+    {
+      "id": "MED-015",
+      "name": "Pantoprazole 40mg",
+      "category": "Gastrointestinal",
+      "manufacturer": "Nuvia Biotech",
+      "batchNumber": "BN-2498",
+      "quantity": 60,
+      "reorderLevel": 120,
+      "purchasePrice": 0.19,
+      "sellingPrice": 0.42,
+      "manufacturingDate": "2025-12-27",
+      "expiryDate": "2026-08-02",
+      "supplierId": "SUP-006",
+      "supplierName": "Continental BioCare",
+      "storageLocation": "B1-S2"
+    },
+    {
+      "id": "MED-016",
+      "name": "Oral Rehydration Salts",
+      "category": "Gastrointestinal",
+      "manufacturer": "Corvex Labs",
+      "batchNumber": "BN-2505",
+      "quantity": 940,
+      "reorderLevel": 250,
+      "purchasePrice": 0.13,
+      "sellingPrice": 0.3,
+      "manufacturingDate": "2026-05-06",
+      "expiryDate": "2027-12-27",
+      "supplierId": "SUP-001",
+      "supplierName": "MediSource Distributors",
+      "storageLocation": "B1-S3"
+    },
+    {
+      "id": "MED-017",
+      "name": "Vitamin D3 1000IU",
+      "category": "Vitamin & Supplement",
+      "manufacturer": "Halden Health",
+      "batchNumber": "BN-2512",
+      "quantity": 780,
+      "reorderLevel": 200,
+      "purchasePrice": 0.08,
+      "sellingPrice": 0.2,
+      "manufacturingDate": "2025-12-07",
+      "expiryDate": "2027-09-28",
+      "supplierId": "SUP-002",
+      "supplierName": "GreenLeaf Pharma Supply",
+      "storageLocation": "E1-S1"
+    },
+    {
+      "id": "MED-018",
+      "name": "Multivitamin Complex",
+      "category": "Vitamin & Supplement",
+      "manufacturer": "Vitalis Labs",
+      "batchNumber": "BN-2519",
+      "quantity": 320,
+      "reorderLevel": 120,
+      "purchasePrice": 0.16,
+      "sellingPrice": 0.38,
+      "manufacturingDate": "2026-02-15",
+      "expiryDate": "2026-10-15",
+      "supplierId": "SUP-005",
+      "supplierName": "Vitalis Wholesale",
+      "storageLocation": "E1-S2"
+    },
+    {
+      "id": "MED-019",
+      "name": "Zinc Syrup 100ml",
+      "category": "Vitamin & Supplement",
+      "manufacturer": "Nuvia Biotech",
+      "batchNumber": "BN-2526",
+      "quantity": 145,
+      "reorderLevel": 80,
+      "purchasePrice": 1.2,
+      "sellingPrice": 2.6,
+      "manufacturingDate": "2026-04-06",
+      "expiryDate": "2026-07-10",
+      "supplierId": "SUP-006",
+      "supplierName": "Continental BioCare",
+      "storageLocation": "E1-S3"
+    },
+    {
+      "id": "MED-020",
+      "name": "Iron & Folic Acid",
+      "category": "Vitamin & Supplement",
+      "manufacturer": "Vitalis Labs",
+      "batchNumber": "BN-2533",
+      "quantity": 260,
+      "reorderLevel": 100,
+      "purchasePrice": 0.1,
+      "sellingPrice": 0.24,
+      "manufacturingDate": "2026-03-07",
+      "expiryDate": "2027-03-07",
+      "supplierId": "SUP-005",
+      "supplierName": "Vitalis Wholesale",
+      "storageLocation": "E2-S1"
+    },
+    {
+      "id": "MED-021",
+      "name": "Hydrocortisone Cream 1%",
+      "category": "Dermatological",
+      "manufacturer": "Aeris Medical",
+      "batchNumber": "BN-2540",
+      "quantity": 118,
+      "reorderLevel": 50,
+      "purchasePrice": 1.4,
+      "sellingPrice": 3.1,
+      "manufacturingDate": "2026-04-26",
+      "expiryDate": "2027-02-05",
+      "supplierId": "SUP-004",
+      "supplierName": "Apex Medical Trading",
+      "storageLocation": "F1-S1"
+    },
+    {
+      "id": "MED-022",
+      "name": "Clotrimazole Cream 1%",
+      "category": "Dermatological",
+      "manufacturer": "Belmar Pharma",
+      "batchNumber": "BN-2547",
+      "quantity": 42,
+      "reorderLevel": 60,
+      "purchasePrice": 1.15,
+      "sellingPrice": 2.5,
+      "manufacturingDate": "2026-03-27",
+      "expiryDate": "2026-10-31",
+      "supplierId": "SUP-004",
+      "supplierName": "Apex Medical Trading",
+      "storageLocation": "F1-S2"
+    },
+    {
+      "id": "MED-023",
+      "name": "Calamine Lotion 100ml",
+      "category": "Dermatological",
+      "manufacturer": "Vitalis Labs",
+      "batchNumber": "BN-2554",
+      "quantity": 0,
+      "reorderLevel": 40,
+      "purchasePrice": 0.95,
+      "sellingPrice": 2.2,
+      "manufacturingDate": "2026-01-06",
+      "expiryDate": "2026-12-22",
+      "supplierId": "SUP-005",
+      "supplierName": "Vitalis Wholesale",
+      "storageLocation": "F1-S3"
+    },
+    {
+      "id": "MED-024",
+      "name": "Doxycycline 100mg",
+      "category": "Antibiotic",
+      "manufacturer": "Belmar Pharma",
+      "batchNumber": "BN-2561",
+      "quantity": 205,
+      "reorderLevel": 90,
+      "purchasePrice": 0.28,
+      "sellingPrice": 0.6,
+      "manufacturingDate": "2026-02-25",
+      "expiryDate": "2026-09-01",
+      "supplierId": "SUP-001",
+      "supplierName": "MediSource Distributors",
+      "storageLocation": "B2-S3"
+    }
+  ],
+  "stockTransactions": [
+    {
+      "id": "TRX-9000",
+      "medicineId": "MED-001",
+      "medicineName": "Paracetamol 500mg",
+      "type": "add",
+      "quantity": 500,
+      "createdAt": "2026-08-13T02:27:38.464Z",
+      "user": "A. Raymond delivery",
+      "reason": "Purchase order PO-1042 received"
+    },
+    {
+      "id": "TRX-9001",
+      "medicineId": "MED-002",
+      "medicineName": "Ibuprofen 400mg",
+      "type": "remove",
+      "quantity": 60,
+      "createdAt": "2026-08-13T02:27:38.464Z",
+      "user": "Priya N.",
+      "reason": "Dispensed against prescriptions"
+    },
+    {
+      "id": "TRX-9002",
+      "medicineId": "MED-006",
+      "medicineName": "Metformin 850mg",
+      "type": "remove",
+      "quantity": 120,
+      "createdAt": "2026-08-12T02:27:38.464Z",
+      "user": "Jordan M.",
+      "reason": "Ward transfer"
+    },
+    {
+      "id": "TRX-9003",
+      "medicineId": "MED-004",
+      "medicineName": "Azithromycin 250mg",
+      "type": "adjust",
+      "quantity": -8,
+      "createdAt": "2026-08-12T02:27:38.464Z",
+      "user": "Store audit",
+      "reason": "Cycle count correction"
+    },
+    {
+      "id": "TRX-9004",
+      "medicineId": "MED-011",
+      "medicineName": "Salbutamol Inhaler 100mcg",
+      "type": "add",
+      "quantity": 80,
+      "createdAt": "2026-08-11T02:27:38.464Z",
+      "user": "S. Lindqvist delivery",
+      "reason": "Purchase order PO-1039 received"
+    },
+    {
+      "id": "TRX-9005",
+      "medicineId": "MED-012",
+      "medicineName": "Cetirizine 10mg",
+      "type": "remove",
+      "quantity": 95,
+      "createdAt": "2026-08-10T02:27:38.464Z",
+      "user": "Priya N.",
+      "reason": "Retail counter sales"
+    },
+    {
+      "id": "TRX-9006",
+      "medicineId": "MED-007",
+      "medicineName": "Insulin Glargine 100IU",
+      "type": "add",
+      "quantity": 40,
+      "createdAt": "2026-08-09T02:27:38.464Z",
+      "user": "Cold chain intake",
+      "reason": "Refrigerated delivery verified"
+    },
+    {
+      "id": "TRX-9007",
+      "medicineId": "MED-015",
+      "medicineName": "Pantoprazole 40mg",
+      "type": "remove",
+      "quantity": 45,
+      "createdAt": "2026-08-08T02:27:38.464Z",
+      "user": "Disposal team",
+      "reason": "Expired batch removed from shelf"
+    },
+    {
+      "id": "TRX-9008",
+      "medicineId": "MED-009",
+      "medicineName": "Losartan 50mg",
+      "type": "remove",
+      "quantity": 70,
+      "createdAt": "2026-08-07T02:27:38.464Z",
+      "user": "Jordan M.",
+      "reason": "Retail counter sales"
+    },
+    {
+      "id": "TRX-9009",
+      "medicineId": "MED-017",
+      "medicineName": "Vitamin D3 1000IU",
+      "type": "add",
+      "quantity": 300,
+      "createdAt": "2026-08-06T02:27:38.464Z",
+      "user": "D. Okafor delivery",
+      "reason": "Purchase order PO-1035 received"
+    },
+    {
+      "id": "TRX-9010",
+      "medicineId": "MED-003",
+      "medicineName": "Amoxicillin 500mg",
+      "type": "remove",
+      "quantity": 150,
+      "createdAt": "2026-08-05T02:27:38.464Z",
+      "user": "Priya N.",
+      "reason": "Bulk clinic order"
+    },
+    {
+      "id": "TRX-9011",
+      "medicineId": "MED-019",
+      "medicineName": "Zinc Syrup 100ml",
+      "type": "remove",
+      "quantity": 30,
+      "createdAt": "2026-08-04T02:27:38.464Z",
+      "user": "Disposal team",
+      "reason": "Expired syrup disposed"
+    },
+    {
+      "id": "TRX-9012",
+      "medicineId": "MED-022",
+      "medicineName": "Clotrimazole Cream 1%",
+      "type": "adjust",
+      "quantity": 6,
+      "createdAt": "2026-08-03T02:27:38.464Z",
+      "user": "Store audit",
+      "reason": "Recount after stocktake"
+    },
+    {
+      "id": "TRX-9013",
+      "medicineId": "MED-024",
+      "medicineName": "Doxycycline 100mg",
+      "type": "remove",
+      "quantity": 55,
+      "createdAt": "2026-08-02T02:27:38.464Z",
+      "user": "Priya N.",
+      "reason": "Dispensed against prescriptions"
+    },
+    {
+      "id": "TRX-9014",
+      "medicineId": "MED-010",
+      "medicineName": "Aspirin 75mg",
+      "type": "add",
+      "quantity": 600,
+      "createdAt": "2026-07-31T02:27:38.464Z",
+      "user": "A. Raymond delivery",
+      "reason": "Quarterly bulk restock"
+    },
+    {
+      "id": "TRX-9015",
+      "medicineId": "MED-014",
+      "medicineName": "Omeprazole 20mg",
+      "type": "remove",
+      "quantity": 110,
+      "createdAt": "2026-07-29T02:27:38.464Z",
+      "user": "Jordan M.",
+      "reason": "Retail counter sales"
+    },
+    {
+      "id": "TRX-9016",
+      "medicineId": "MED-005",
+      "medicineName": "Ceftriaxone 1g Injection",
+      "type": "remove",
+      "quantity": 60,
+      "createdAt": "2026-07-27T02:27:38.464Z",
+      "user": "Ward request",
+      "reason": "Injection stock issued to clinic"
+    },
+    {
+      "id": "TRX-9017",
+      "medicineId": "MED-020",
+      "medicineName": "Iron & Folic Acid",
+      "type": "add",
+      "quantity": 150,
+      "createdAt": "2026-07-25T02:27:38.464Z",
+      "user": "M. Lee delivery",
+      "reason": "Purchase order PO-1028 received"
+    },
+    {
+      "id": "TRX-9018",
+      "medicineId": "MED-008",
+      "medicineName": "Atorvastatin 20mg",
+      "type": "remove",
+      "quantity": 90,
+      "createdAt": "2026-07-23T02:27:38.464Z",
+      "user": "Priya N.",
+      "reason": "Retail counter sales"
+    },
+    {
+      "id": "TRX-9019",
+      "medicineId": "MED-018",
+      "medicineName": "Multivitamin Complex",
+      "type": "add",
+      "quantity": 200,
+      "createdAt": "2026-07-20T02:27:38.464Z",
+      "user": "T. Ferreira delivery",
+      "reason": "Supplement restock"
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "id": "PO-1051",
+      "supplierId": "SUP-001",
+      "supplierName": "MediSource Distributors",
+      "status": "pending",
+      "orderDate": "2026-08-13",
+      "expectedDelivery": "2026-08-20",
+      "lines": [
+        {
+          "medicineId": "MED-002",
+          "medicineName": "Ibuprofen 400mg",
+          "quantity": 500,
+          "unitPrice": 0.09
+        },
+        {
+          "medicineId": "MED-001",
+          "medicineName": "Paracetamol 500mg",
+          "quantity": 800,
+          "unitPrice": 0.06
+        }
+      ],
+      "total": 93
+    },
+    {
+      "id": "PO-1050",
+      "supplierId": "SUP-004",
+      "supplierName": "Apex Medical Trading",
+      "status": "pending",
+      "orderDate": "2026-08-12",
+      "expectedDelivery": "2026-08-22",
+      "lines": [
+        {
+          "medicineId": "MED-004",
+          "medicineName": "Azithromycin 250mg",
+          "quantity": 300,
+          "unitPrice": 0.55
+        },
+        {
+          "medicineId": "MED-023",
+          "medicineName": "Calamine Lotion 100ml",
+          "quantity": 100,
+          "unitPrice": 0.95
+        }
+      ],
+      "total": 260
+    },
+    {
+      "id": "PO-1049",
+      "supplierId": "SUP-006",
+      "supplierName": "Continental BioCare",
+      "status": "ordered",
+      "orderDate": "2026-08-10",
+      "expectedDelivery": "2026-08-17",
+      "lines": [
+        {
+          "medicineId": "MED-005",
+          "medicineName": "Ceftriaxone 1g Injection",
+          "quantity": 120,
+          "unitPrice": 2.4
+        },
+        {
+          "medicineId": "MED-015",
+          "medicineName": "Pantoprazole 40mg",
+          "quantity": 250,
+          "unitPrice": 0.19
+        }
+      ],
+      "total": 335.5
+    },
+    {
+      "id": "PO-1048",
+      "supplierId": "SUP-003",
+      "supplierName": "Nordic Health Logistics",
+      "status": "ordered",
+      "orderDate": "2026-08-08",
+      "expectedDelivery": "2026-08-19",
+      "lines": [
+        {
+          "medicineId": "MED-013",
+          "medicineName": "Montelukast 10mg",
+          "quantity": 200,
+          "unitPrice": 0.31
+        },
+        {
+          "medicineId": "MED-012",
+          "medicineName": "Cetirizine 10mg",
+          "quantity": 400,
+          "unitPrice": 0.07
+        }
+      ],
+      "total": 90
+    },
+    {
+      "id": "PO-1047",
+      "supplierId": "SUP-005",
+      "supplierName": "Vitalis Wholesale",
+      "status": "pending",
+      "orderDate": "2026-08-11",
+      "expectedDelivery": "2026-08-24",
+      "lines": [
+        {
+          "medicineId": "MED-023",
+          "medicineName": "Calamine Lotion 100ml",
+          "quantity": 80,
+          "unitPrice": 0.95
+        },
+        {
+          "medicineId": "MED-018",
+          "medicineName": "Multivitamin Complex",
+          "quantity": 200,
+          "unitPrice": 0.16
+        }
+      ],
+      "total": 108
+    },
+    {
+      "id": "PO-1046",
+      "supplierId": "SUP-002",
+      "supplierName": "GreenLeaf Pharma Supply",
+      "status": "received",
+      "orderDate": "2026-08-02",
+      "expectedDelivery": "2026-08-09",
+      "lines": [
+        {
+          "medicineId": "MED-006",
+          "medicineName": "Metformin 850mg",
+          "quantity": 600,
+          "unitPrice": 0.12
+        },
+        {
+          "medicineId": "MED-008",
+          "medicineName": "Atorvastatin 20mg",
+          "quantity": 400,
+          "unitPrice": 0.18
+        }
+      ],
+      "total": 144
+    },
+    {
+      "id": "PO-1045",
+      "supplierId": "SUP-001",
+      "supplierName": "MediSource Distributors",
+      "status": "received",
+      "orderDate": "2026-07-27",
+      "expectedDelivery": "2026-08-03",
+      "lines": [
+        {
+          "medicineId": "MED-003",
+          "medicineName": "Amoxicillin 500mg",
+          "quantity": 500,
+          "unitPrice": 0.22
+        }
+      ],
+      "total": 110
+    },
+    {
+      "id": "PO-1044",
+      "supplierId": "SUP-003",
+      "supplierName": "Nordic Health Logistics",
+      "status": "cancelled",
+      "orderDate": "2026-07-24",
+      "expectedDelivery": "2026-07-31",
+      "lines": [
+        {
+          "medicineId": "MED-011",
+          "medicineName": "Salbutamol Inhaler 100mcg",
+          "quantity": 60,
+          "unitPrice": 3.1
+        }
+      ],
+      "total": 186
+    },
+    {
+      "id": "PO-1043",
+      "supplierId": "SUP-005",
+      "supplierName": "Vitalis Wholesale",
+      "status": "received",
+      "orderDate": "2026-07-19",
+      "expectedDelivery": "2026-07-26",
+      "lines": [
+        {
+          "medicineId": "MED-007",
+          "medicineName": "Insulin Glargine 100IU",
+          "quantity": 60,
+          "unitPrice": 12.5
+        },
+        {
+          "medicineId": "MED-020",
+          "medicineName": "Iron & Folic Acid",
+          "quantity": 300,
+          "unitPrice": 0.1
+        }
+      ],
+      "total": 780
+    },
+    {
+      "id": "PO-1042",
+      "supplierId": "SUP-006",
+      "supplierName": "Continental BioCare",
+      "status": "received",
+      "orderDate": "2026-07-12",
+      "expectedDelivery": "2026-07-18",
+      "lines": [
+        {
+          "medicineId": "MED-019",
+          "medicineName": "Zinc Syrup 100ml",
+          "quantity": 150,
+          "unitPrice": 1.2
+        },
+        {
+          "medicineId": "MED-016",
+          "medicineName": "Oral Rehydration Salts",
+          "quantity": 400,
+          "unitPrice": 0.13
+        }
+      ],
+      "total": 232
+    }
+  ],
+  "expiryRecords": [
+    {
+      "medicineId": "MED-015",
+      "action": "review",
+      "updatedAt": "2026-08-11T02:27:38.464Z"
+    },
+    {
+      "medicineId": "MED-019",
+      "action": "disposed",
+      "updatedAt": "2026-08-08T02:27:38.464Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NTF-01",
+      "kind": "expired",
+      "title": "Expired batch on shelf",
+      "message": "Pantoprazole 40mg (BN-2498) expired 12 days ago and is still recorded in stock.",
+      "createdAt": "2026-08-13T21:39:38.464Z",
+      "read": false
+    },
+    {
+      "id": "NTF-02",
+      "kind": "expiring",
+      "title": "3 medicines expiring within 30 days",
+      "message": "Doxycycline 100mg, Azithromycin 250mg and Cetirizine 10mg need action.",
+      "createdAt": "2026-08-13T14:27:38.464Z",
+      "read": false
+    },
+    {
+      "id": "NTF-03",
+      "kind": "low_stock",
+      "title": "Low stock: Ibuprofen 400mg",
+      "message": "180 units remaining, below the reorder level of 250.",
+      "createdAt": "2026-08-13T02:27:38.464Z",
+      "read": false
+    },
+    {
+      "id": "NTF-04",
+      "kind": "pending_order",
+      "title": "3 purchase orders pending approval",
+      "message": "PO-1051, PO-1050 and PO-1047 have not been sent to suppliers yet.",
+      "createdAt": "2026-08-12T16:51:38.464Z",
+      "read": false
+    },
+    {
+      "id": "NTF-05",
+      "kind": "unusual_stock",
+      "title": "Unusual stock change detected",
+      "message": "Amoxicillin 500mg dropped by 150 units in a single transaction.",
+      "createdAt": "2026-08-12T02:27:38.464Z",
+      "read": true
+    },
+    {
+      "id": "NTF-06",
+      "kind": "low_stock",
+      "title": "Out of stock: Ceftriaxone 1g Injection",
+      "message": "Cold-chain item unavailable. Reorder suggested from Continental BioCare.",
+      "createdAt": "2026-08-11T14:27:38.464Z",
+      "read": true
+    }
+  ]
+}
